@@ -1,0 +1,8 @@
+ PDF Header: %PDF-1.4
+ /JS                    1
+ /4                     1
+ %%EOF                  0
+ Total entropy:           3.664498 (        14 bytes)
+ Entropy inside streams:  N/A      (         0 bytes)
+ Entropy outside streams: 3.664498 (        14 bytes)
+

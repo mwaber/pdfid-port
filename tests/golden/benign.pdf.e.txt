@@ -1,0 +1,30 @@
+ PDF Header: %PDF-1.4
+ obj                    5
+ endobj                 5
+ stream                 1
+ endstream              1
+ xref                   1
+ trailer                1
+ startxref              1
+ /Page                  1
+ /Encrypt               0
+ /ObjStm                0
+ /JS                    0
+ /JavaScript            0
+ /AA                    0
+ /OpenAction            0
+ /AcroForm              0
+ /JBIG2Decode           0
+ /RichMedia             0
+ /Launch                0
+ /EmbeddedFile          0
+ /XFA                   0
+ /Colors > 2^24         0
+ %%EOF                  1
+ After last %%EOF       0
+ D:20231231235959-05'30  /CreationDate
+ D:20240101000000+00'00  /ModDate
+ Total entropy:           5.487575 (       505 bytes)
+ Entropy inside streams:  5.132944 (        52 bytes)
+ Entropy outside streams: 5.204799 (       453 bytes)
+

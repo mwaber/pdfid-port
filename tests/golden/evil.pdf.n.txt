@@ -1,0 +1,23 @@
+ PDF Header: %PDF-1.7
+ obj                    7
+ endobj                 7
+ stream                 2
+ endstream              2
+ xref                   1
+ trailer                1
+ startxref              1
+ /Page                  1
+ /Encrypt               1
+ /ObjStm                1
+ /JS                    1(1)
+ /JavaScript            1(1)
+ /AA                    2
+ /OpenAction            1
+ /AcroForm              1
+ /JBIG2Decode           1
+ /RichMedia             1
+ /Launch                1
+ /EmbeddedFile          1
+ /XFA                   1
+ /Colors > 2^24         1
+

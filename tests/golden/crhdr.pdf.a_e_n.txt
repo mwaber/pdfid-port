@@ -1,0 +1,8 @@
+ PDF Header: %PDF-2.0
+ /OpenAction            1
+ %%EOF                  1
+ After last %%EOF       0
+ Total entropy:           4.209867 (        26 bytes)
+ Entropy inside streams:  N/A      (         0 bytes)
+ Entropy outside streams: 4.209867 (        26 bytes)
+

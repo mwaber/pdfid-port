@@ -1,0 +1,4 @@
+ PDF Header: %PDF-1.2
+ stream                 1
+ /JS                    1
+

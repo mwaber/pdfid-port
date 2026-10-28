@@ -1,0 +1,7 @@
+ PDF Header: %PDF-1.4
+ /Page                  1(1)
+ /JS                    2(1)
+ /JavaScript            1(1)
+ /OpenAction            1(1)
+ /Colors > 2^24         4
+

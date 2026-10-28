@@ -1,0 +1,24 @@
+[package]
+name = "pdfid"
+version = "0.1.0"
+edition = "2021"
+description = "Rust port of Didier Stevens' pdfid.py — PDF keyword triage scanner"
+license = "MIT"
+
+[lib]
+name = "pdfid"
+path = "src/lib.rs"
+
+[[bin]]
+name = "pdfid"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
+
+[dev-dependencies]
+serde_json = { version = "1", features = ["preserve_order"] }

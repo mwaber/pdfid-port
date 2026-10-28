@@ -1,0 +1,34 @@
+ PDF Header: %PDF-1.4
+ obj                    5
+ endobj                 5
+ stream                 1
+ endstream              1
+ xref                   1
+ trailer                1
+ startxref              1
+ /Page                  1
+ /Catalog               1
+ /Contents              1
+ /Count                 1
+ /CreationDate          1
+ /Filter                1
+ /FlateDecode           1
+ /Info                  1
+ /Kids                  1
+ /Length                1
+ /MediaBox              1
+ /ModDate               1
+ /Pages                 2
+ /Parent                1
+ /Producer              1
+ /Root                  1
+ /Size                  1
+ /Type                  3
+ %%EOF                  1
+ After last %%EOF       0
+ D:20231231235959-05'30  /CreationDate
+ D:20240101000000+00'00  /ModDate
+ Total entropy:           5.487575 (       505 bytes)
+ Entropy inside streams:  5.132944 (        52 bytes)
+ Entropy outside streams: 5.204799 (       453 bytes)
+
