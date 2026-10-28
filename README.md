@@ -10,6 +10,14 @@ Git blob hash: 4f8a2fd74a38b6d5df94b220f908f57c3164d279
 
 SHA-256: e958a01f1c2596470f27d3c308061b85d7059ff476a58d74f1957a71b4f1248f
 
+## Disclaimer
+
+> **Use at your own risk.** This project was implemented with the help of AI. As a result, it is
+> **not guaranteed to be reliable, secure or feature complete**. It may contain bugs, miss malicious
+> content, or produce incorrect results. Do not rely on it as your only means of detecting malicious PDFs,
+> and always verify results independently (for example against the original `pdfid.py`).
+> The software is provided "as is", without warranty of any kind; see the [MIT License](LICENSE-MIT).
+
 ## Build
 
 ```sh
@@ -77,3 +85,9 @@ python3 -I tests/gen_fixtures.py /path/to/pdfid.py
 let report = pdfid::scan(&bytes, &pdfid::Options { extra: true, ..Default::default() });
 if !report.suspicious().is_empty() { /* ... */ }
 ```
+
+## License
+
+Released under the [MIT License](LICENSE-MIT). Use at your own risk; see the [Disclaimer](#disclaimer).
+
+This is a port of `pdfid.py` by Didier Stevens, whose source code is placed in the public domain by its author.

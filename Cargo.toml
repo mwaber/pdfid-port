@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 description = "Rust port of Didier Stevens' pdfid.py — PDF keyword triage scanner"
 license = "MIT"
+license-file = "LICENSE-MIT"
+readme = "README.md"
 
 [lib]
 name = "pdfid"
