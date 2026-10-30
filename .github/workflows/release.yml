@@ -71,7 +71,9 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.target }}
-          path: pdfid-*.*
+          path: |
+            pdfid-*.tar.gz
+            pdfid-*.zip
           if-no-files-found: error
 
   release:
@@ -87,7 +89,10 @@ jobs:
           merge-multiple: true
       - name: Checksums
         working-directory: dist
-        run: sha256sum pdfid-* > SHA256SUMS
+        run: |
+          ls -la
+          sha256sum pdfid-*.tar.gz pdfid-*.zip > SHA256SUMS
+          cat SHA256SUMS
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}
