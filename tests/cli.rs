@@ -412,7 +412,9 @@ fn json_non_pdf_and_errors() {
     assert_eq!(r["keywords"]["/JavaScript"]["count"], 1);
 }
 
+
 #[test]
+#[cfg(unix)] // '"', '\\' and control characters are not allowed in Windows file names
 fn json_escapes_strings() {
     let d = tmpdir("json_escape");
     let f = d.join("q\"b\\s\tt\u{1}\n\ré.pdf");
