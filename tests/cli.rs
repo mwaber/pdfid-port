@@ -167,6 +167,7 @@ fn reads_from_stdin() {
 }
 
 #[test]
+#[cfg(unix)] // a directory cannot be opened as a file handle on Windows
 fn stdin_read_error() {
     // a directory as stdin makes read() fail with EISDIR
     let o = Command::new(env!("CARGO_BIN_EXE_pdfid"))
@@ -223,7 +224,7 @@ fn scan_recurses_sorted_and_skips_symlinks() {
                     .strip_prefix(&d)
                     .unwrap()
                     .to_string_lossy()
-                    .into_owned()
+                    .replace('\\', "/")
             })
             .collect();
         assert_eq!(rel, ["a.pdf", "b/nested/z.pdf", "c.txt"]);
@@ -397,7 +398,7 @@ fn json_non_pdf_and_errors() {
     assert!(v[0]["header"].is_null());
     assert!(v[0].get("keywords").is_none());
     assert_eq!(v[1]["file"], "/nonexistent.pdf");
-    assert!(v[1]["error"].as_str().unwrap().contains("No such file"));
+    assert!(!v[1]["error"].as_str().unwrap().is_empty());
     assert_eq!(v[2]["isPdf"], true);
 
     // forced scan of a non-PDF reports keywords but isPdf=false
