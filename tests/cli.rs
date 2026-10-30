@@ -412,7 +412,6 @@ fn json_non_pdf_and_errors() {
     assert_eq!(r["keywords"]["/JavaScript"]["count"], 1);
 }
 
-
 #[test]
 #[cfg(unix)] // '"', '\\' and control characters are not allowed in Windows file names
 fn json_escapes_strings() {
